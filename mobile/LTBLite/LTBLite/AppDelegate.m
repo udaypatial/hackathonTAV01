@@ -82,7 +82,7 @@ NSString *const FBSessionStateChangedNotification = @"com.tavant.ltblite:FBSessi
                 // We have a valid session
                 NSLog(@"User session found");                
                 ControlBoardController *controlBoardController = [[ControlBoardController alloc] initWithNibName:@"ControlBoardController" bundle:nil];
-                NavViewController *navViewController = [[NavViewController alloc] initWithRootViewController:controlBoardController];
+                UINavigationController *navViewController = [[UINavigationController alloc] initWithRootViewController:controlBoardController];
                 self.window.rootViewController = navViewController;
                 [self.window makeKeyAndVisible];
             }

@@ -25,7 +25,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
         // Custom initialization
         self.friends = [self getFBFriends];
         
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Friend List" image:[UIImage imageNamed:@"artist-tab.png"] tag:1];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Friend List" image:[UIImage imageNamed:@"artist-tab.png"] tag:1];        
     }
     return self;
 }
@@ -37,6 +37,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
     self.friendTableView.delegate = self;
     self.friendTableView.dataSource = self;
     [self.friendTableView registerClass:[FBFriendTableViewCell class] forCellReuseIdentifier:CellIdentifier];
+    _addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showFBFriendsList)];
+
+    //self.navigationItem.rightBarButtonItem = _addButton;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -46,8 +49,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
 
 -(void) viewWillAppear:(BOOL)animated
 {
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     [super viewWillAppear:animated];
+    self.tabBarController.navigationItem.title=@"LOCK: FB Groups";
+    self.tabBarController.navigationItem.rightBarButtonItem = _addButton;
 }
 
 //-(void) viewWillDisappear:(BOOL)animated
@@ -187,6 +192,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
     
 }
 
-
+-(void) showFBFriendsList
+{
+    NSLog(@"Show the FB Friends List");
+}
 
 @end

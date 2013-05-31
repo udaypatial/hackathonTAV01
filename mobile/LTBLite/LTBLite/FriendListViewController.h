@@ -15,6 +15,7 @@
     IBOutlet UITableView *friendTableView;
 }
 @property (nonatomic,strong) IBOutlet UITableView *friendTableView;
+@property (nonatomic,strong) UIBarButtonItem *addButton;
 @property (nonatomic,strong) NSArray *friends;
 
 -(NSArray*) getFBFriends;

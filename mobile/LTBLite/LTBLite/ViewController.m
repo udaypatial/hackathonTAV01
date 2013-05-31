@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "ControlBoardController.h"
-#import "NavViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -29,7 +29,7 @@
 {
     if(FBSession.activeSession.isOpen){
         ControlBoardController *controlBoardController = [[ControlBoardController alloc] initWithNibName:@"ControlBoardController" bundle:nil];
-        NavViewController *navViewController = [[NavViewController alloc] initWithRootViewController:controlBoardController];
+        UINavigationController *navViewController = [[UINavigationController alloc] initWithRootViewController:controlBoardController];
         [self presentViewController:navViewController animated:YES completion:NULL];
     }else{
         [self.fbLoginButton setHidden:NO];

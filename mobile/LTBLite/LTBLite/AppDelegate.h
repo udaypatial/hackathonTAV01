@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>		
 #import <FacebookSDK/FacebookSDK.h>
 #import "ViewController.h"
-#import "NavViewController.h"
+
 #import "ControlBoardController.h"
 
 extern NSString  *const FBSessionStateChangeNotification;

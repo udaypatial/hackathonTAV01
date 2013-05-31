@@ -7,7 +7,7 @@
 //
 
 #import "ControlBoardController.h"
-#import "NavViewController.h"
+
 
 @interface ControlBoardController ()
 
@@ -46,8 +46,9 @@
     NSLog(@"Going to the lock screen");
     FriendListViewController* friendListViewController = [[FriendListViewController alloc] initWithNibName:@"FriendListViewController" bundle:nil];
     LockControlViewController* lockControlViewController = [[LockControlViewController alloc] initWithNibName:@"LockControlViewController" bundle:nil];
+    CoOwnLockViewController* coOwnLockViewController = [[CoOwnLockViewController alloc] initWithNibName:@"CoOwnLockViewController" bundle:nil]; 
     
-    NSArray *tabs = [[NSArray alloc] initWithObjects: lockControlViewController, friendListViewController, nil];
+    NSArray *tabs = [[NSArray alloc] initWithObjects: lockControlViewController,coOwnLockViewController , friendListViewController, nil];
     
     UITabBarController* lockTabBarController =[[UITabBarController alloc] init];
     [lockTabBarController setViewControllers:tabs animated:YES];

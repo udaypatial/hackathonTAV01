@@ -34,6 +34,8 @@
 {
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillAppear:animated];
+    self.tabBarController.navigationItem.title=@"LOCK: Owned";
+    self.tabBarController.navigationItem.rightBarButtonItem = nil;
 }
 
 //-(void) viewWillDisappear:(BOOL)animated

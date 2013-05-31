@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		B1A93252175347C7007C60ED /* LockControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A93250175347C7007C60ED /* LockControlViewController.m */; };
 		B1A93253175347C7007C60ED /* LockControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1A93251175347C7007C60ED /* LockControlViewController.xib */; };
+		B1DC040B175794CC008A34F6 /* CoOwnLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC0409175794CC008A34F6 /* CoOwnLockViewController.m */; };
+		B1DC040C175794CC008A34F6 /* CoOwnLockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DC040A175794CC008A34F6 /* CoOwnLockViewController.xib */; };
+		B1DC040E17579660008A34F6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DC040D17579660008A34F6 /* FacebookSDK.framework */; };
+		B1DC041117579673008A34F6 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1DC040F17579673008A34F6 /* FacebookSDKResources.bundle */; };
+		B1DC041217579673008A34F6 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1DC041017579673008A34F6 /* FBUserSettingsViewResources.bundle */; };
+		B1DC04151757981C008A34F6 /* FBGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC04141757981C008A34F6 /* FBGroup.m */; };
 		B1DE185B174E494100C9103F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DE185A174E494100C9103F /* ViewController.xib */; };
 		B1DE185F174E4B0800C9103F /* ControlBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE185D174E4B0800C9103F /* ControlBoardController.m */; };
 		B1DE1860174E4B0800C9103F /* ControlBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DE185E174E4B0800C9103F /* ControlBoardController.xib */; };
-		B1DE1863174F66BD00C9103F /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE1862174F66BD00C9103F /* NavViewController.m */; };
 		B1DE1867174F756B00C9103F /* FriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE1865174F756B00C9103F /* FriendListViewController.m */; };
 		B1DE1868174F756B00C9103F /* FriendListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DE1866174F756B00C9103F /* FriendListViewController.xib */; };
 		B1DE186B174F913D00C9103F /* FBFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE186A174F913D00C9103F /* FBFriendTableViewCell.m */; };
 		B1DE186D174F919D00C9103F /* FBFriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DE186C174F919D00C9103F /* FBFriendTableViewCell.xib */; };
-		B1E8A639174CF79E00F075F9 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E8A638174CF79E00F075F9 /* FacebookSDK.framework */; };
-		B1E8A63B174CFC5A00F075F9 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1E8A63A174CFC5A00F075F9 /* FacebookSDKResources.bundle */; };
-		B1E8A63D174CFC8400F075F9 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1E8A63C174CFC8400F075F9 /* FBUserSettingsViewResources.bundle */; };
 		B1E8A63F174CFCD400F075F9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E8A63E174CFCD400F075F9 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B1E8A641174CFCE500F075F9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E8A640174CFCE500F075F9 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B1E8A643174CFCF500F075F9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E8A642174CFCF500F075F9 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -41,21 +43,24 @@
 		B1A9324F175347C7007C60ED /* LockControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockControlViewController.h; sourceTree = "<group>"; };
 		B1A93250175347C7007C60ED /* LockControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockControlViewController.m; sourceTree = "<group>"; };
 		B1A93251175347C7007C60ED /* LockControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockControlViewController.xib; sourceTree = "<group>"; };
+		B1DC0408175794CC008A34F6 /* CoOwnLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoOwnLockViewController.h; sourceTree = "<group>"; };
+		B1DC0409175794CC008A34F6 /* CoOwnLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoOwnLockViewController.m; sourceTree = "<group>"; };
+		B1DC040A175794CC008A34F6 /* CoOwnLockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoOwnLockViewController.xib; sourceTree = "<group>"; };
+		B1DC040D17579660008A34F6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		B1DC040F17579673008A34F6 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		B1DC041017579673008A34F6 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		B1DC04131757981C008A34F6 /* FBGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGroup.h; sourceTree = "<group>"; };
+		B1DC04141757981C008A34F6 /* FBGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBGroup.m; sourceTree = "<group>"; };
 		B1DE185A174E494100C9103F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		B1DE185C174E4B0800C9103F /* ControlBoardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControlBoardController.h; path = ../ControlBoardController.h; sourceTree = "<group>"; };
 		B1DE185D174E4B0800C9103F /* ControlBoardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControlBoardController.m; path = ../ControlBoardController.m; sourceTree = "<group>"; };
 		B1DE185E174E4B0800C9103F /* ControlBoardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ControlBoardController.xib; path = ../ControlBoardController.xib; sourceTree = "<group>"; };
-		B1DE1861174F66BD00C9103F /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
-		B1DE1862174F66BD00C9103F /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		B1DE1864174F756B00C9103F /* FriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListViewController.h; sourceTree = "<group>"; };
 		B1DE1865174F756B00C9103F /* FriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListViewController.m; sourceTree = "<group>"; };
 		B1DE1866174F756B00C9103F /* FriendListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendListViewController.xib; sourceTree = "<group>"; };
 		B1DE1869174F913D00C9103F /* FBFriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFriendTableViewCell.h; sourceTree = "<group>"; };
 		B1DE186A174F913D00C9103F /* FBFriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFriendTableViewCell.m; sourceTree = "<group>"; };
 		B1DE186C174F919D00C9103F /* FBFriendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFriendTableViewCell.xib; sourceTree = "<group>"; };
-		B1E8A638174CF79E00F075F9 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		B1E8A63A174CFC5A00F075F9 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		B1E8A63C174CFC8400F075F9 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		B1E8A63E174CFCD400F075F9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B1E8A640174CFCE500F075F9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B1E8A642174CFCF500F075F9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -91,13 +96,22 @@
 				B1FDC1A8174CCE290064F0FA /* UIKit.framework in Frameworks */,
 				B1FDC1AA174CCE290064F0FA /* Foundation.framework in Frameworks */,
 				B1FDC1AC174CCE290064F0FA /* CoreGraphics.framework in Frameworks */,
-				B1E8A639174CF79E00F075F9 /* FacebookSDK.framework in Frameworks */,
+				B1DC040E17579660008A34F6 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1DC041617579829008A34F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC04131757981C008A34F6 /* FBGroup.h */,
+				B1DC04141757981C008A34F6 /* FBGroup.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B1FDC19B174CCE290064F0FA = {
 			isa = PBXGroup;
 			children = (
@@ -118,14 +132,14 @@
 		B1FDC1A6174CCE290064F0FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1DC040F17579673008A34F6 /* FacebookSDKResources.bundle */,
+				B1DC041017579673008A34F6 /* FBUserSettingsViewResources.bundle */,
+				B1DC040D17579660008A34F6 /* FacebookSDK.framework */,
 				B1E8A646174CFD0900F075F9 /* Social.framework */,
 				B1E8A644174CFD0100F075F9 /* Security.framework */,
 				B1E8A642174CFCF500F075F9 /* libsqlite3.dylib */,
 				B1E8A640174CFCE500F075F9 /* Accounts.framework */,
 				B1E8A63E174CFCD400F075F9 /* AdSupport.framework */,
-				B1E8A63C174CFC8400F075F9 /* FBUserSettingsViewResources.bundle */,
-				B1E8A63A174CFC5A00F075F9 /* FacebookSDKResources.bundle */,
-				B1E8A638174CF79E00F075F9 /* FacebookSDK.framework */,
 				B1FDC1A7174CCE290064F0FA /* UIKit.framework */,
 				B1FDC1A9174CCE290064F0FA /* Foundation.framework */,
 				B1FDC1AB174CCE290064F0FA /* CoreGraphics.framework */,
@@ -136,6 +150,10 @@
 		B1FDC1AD174CCE290064F0FA /* LTBLite */ = {
 			isa = PBXGroup;
 			children = (
+				B1DC041617579829008A34F6 /* Models */,
+				B1DC0408175794CC008A34F6 /* CoOwnLockViewController.h */,
+				B1DC0409175794CC008A34F6 /* CoOwnLockViewController.m */,
+				B1DC040A175794CC008A34F6 /* CoOwnLockViewController.xib */,
 				B1A9324F175347C7007C60ED /* LockControlViewController.h */,
 				B1A93250175347C7007C60ED /* LockControlViewController.m */,
 				B1A93251175347C7007C60ED /* LockControlViewController.xib */,
@@ -153,8 +171,6 @@
 				B1FDC1C2174CCE290064F0FA /* ViewController.h */,
 				B1FDC1C3174CCE290064F0FA /* ViewController.m */,
 				B1DE185A174E494100C9103F /* ViewController.xib */,
-				B1DE1861174F66BD00C9103F /* NavViewController.h */,
-				B1DE1862174F66BD00C9103F /* NavViewController.m */,
 				B1FDC1AE174CCE290064F0FA /* Supporting Files */,
 			);
 			path = LTBLite;
@@ -229,13 +245,14 @@
 				B1FDC1CD174CD2C10064F0FA /* Default-568h@2x.png in Resources */,
 				B1FDC1CE174CD2C10064F0FA /* Default.png in Resources */,
 				B1FDC1CF174CD2C10064F0FA /* Default@2x.png in Resources */,
-				B1E8A63B174CFC5A00F075F9 /* FacebookSDKResources.bundle in Resources */,
-				B1E8A63D174CFC8400F075F9 /* FBUserSettingsViewResources.bundle in Resources */,
 				B1DE185B174E494100C9103F /* ViewController.xib in Resources */,
 				B1DE1860174E4B0800C9103F /* ControlBoardController.xib in Resources */,
 				B1DE1868174F756B00C9103F /* FriendListViewController.xib in Resources */,
 				B1DE186D174F919D00C9103F /* FBFriendTableViewCell.xib in Resources */,
 				B1A93253175347C7007C60ED /* LockControlViewController.xib in Resources */,
+				B1DC040C175794CC008A34F6 /* CoOwnLockViewController.xib in Resources */,
+				B1DC041117579673008A34F6 /* FacebookSDKResources.bundle in Resources */,
+				B1DC041217579673008A34F6 /* FBUserSettingsViewResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +267,11 @@
 				B1FDC1B8174CCE290064F0FA /* AppDelegate.m in Sources */,
 				B1FDC1C4174CCE290064F0FA /* ViewController.m in Sources */,
 				B1DE185F174E4B0800C9103F /* ControlBoardController.m in Sources */,
-				B1DE1863174F66BD00C9103F /* NavViewController.m in Sources */,
 				B1DE1867174F756B00C9103F /* FriendListViewController.m in Sources */,
 				B1DE186B174F913D00C9103F /* FBFriendTableViewCell.m in Sources */,
 				B1A93252175347C7007C60ED /* LockControlViewController.m in Sources */,
+				B1DC040B175794CC008A34F6 /* CoOwnLockViewController.m in Sources */,
+				B1DC04151757981C008A34F6 /* FBGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +357,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LTBLite/LTBLite-Prefix.pch";
@@ -354,6 +373,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LTBLite/LTBLite-Prefix.pch";

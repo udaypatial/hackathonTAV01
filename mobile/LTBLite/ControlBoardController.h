@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FriendListViewController.h"
 #import "LockControlViewController.h"
+#import "CoOwnLockViewController.h"
 
 @interface ControlBoardController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *lockAccessButton;

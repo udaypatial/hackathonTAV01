@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NavViewController.h"
+
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *fbLoginButton;
