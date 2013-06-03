@@ -7,6 +7,10 @@
 //
 
 #import "FriendListViewController.h"
+#import "FBUserObject.h"
+#import <CoreData/CoreData.h>
+#import "DBContextHandle.h"
+#import "AddNewGroupViewController.h"
 
 @interface FriendListViewController ()
 
@@ -23,8 +27,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        //self.friends = [[NSArray alloc] init];
         self.friends = [self getFBFriends];
-        
+        //NSLog(@"friends array %@",self.friends);
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Friend List" image:[UIImage imageNamed:@"artist-tab.png"] tag:1];        
     }
     return self;
@@ -78,7 +83,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSLog(@"The count is %i",[self.friends count]);
+    //NSLog(@"The count is %i",[self.friends count]);
     return [self.friends count];
 }
 
@@ -175,26 +180,42 @@ static NSString *CellIdentifier = @"CellIdentifier";
             
             NSArray* friends = [result objectForKey:@"data"];
             
-            NSLog(@"Found: %i friends", friends.count);
+            //NSLog(@"Found: friends %@", friends);
             
-//            for (NSDictionary<FBGraphUser>* friend in friends) {
-//                
-//                NSLog(@"I have a friend named %@ with id %@", friend.name, friend.id);
-//                
-//            }
+            for (NSDictionary<FBGraphUser>* friend in friends) {
+                
+                NSLog(@"I have a friend named %@ with id %@", friend.name, friend.id);
+                [self dumpFBUserToDB:friend];
+                
+            }
 
             //friendlist = friends;
             self.friends = friends;
             [self.friendTableView reloadData];
         }];
     }
+    NSLog(@"Friend dump to DB Complete");
     return friendlist;
+    
+}
+
+-(void) dumpFBUserToDB:(NSDictionary<FBGraphUser>*)friend{
+    DBContextHandle *dbHandle = [DBContextHandle getHandle];
+    FBUserObject *newFBUser = [NSEntityDescription insertNewObjectForEntityForName:@"FBUserObject" inManagedObjectContext:dbHandle.managedObjectContext];
+    newFBUser.fb_id = friend.id;
+    newFBUser.first_name = friend.first_name;
+    newFBUser.last_name = friend.last_name;
+    newFBUser.name = friend.name;
+    newFBUser.username = friend.username;
+    [dbHandle.managedObjectContext save:nil];
     
 }
 
 -(void) showFBFriendsList
 {
-    NSLog(@"Show the FB Friends List");
+    AddNewGroupViewController *addNewGroupViewController = [[AddNewGroupViewController alloc] initWithNibName:@"AddNewGroupViewController" bundle:nil];
+    [self.navigationController pushViewController:addNewGroupViewController animated:YES];
+    //NSLog(@"Show the FB Friends List");
 }
 
 @end
