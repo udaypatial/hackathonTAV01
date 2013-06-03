@@ -11,7 +11,7 @@
 
 @implementation FBFriendTableViewCell
 @synthesize profileImage;
-@synthesize friendName;
+@synthesize friendName, checkBox;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

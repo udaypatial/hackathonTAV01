@@ -16,6 +16,7 @@
 @end
 
 @implementation ViewController
+@synthesize fbLoginButton;
 
 - (void)viewDidLoad
 {

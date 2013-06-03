@@ -13,6 +13,7 @@
 @property (nonatomic,assign) int fbId;
 @property (retain, nonatomic) IBOutlet FBProfilePictureView *profileImage;
 @property (retain, nonatomic) IBOutlet UILabel *friendName;
+@property (strong, nonatomic) IBOutlet UIImageView * checkBox;
 
 
 

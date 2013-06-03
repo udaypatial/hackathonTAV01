@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B117585F175B498500C4CC8D /* ArduinoDBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B117585D175B498500C4CC8D /* ArduinoDBModel.xcdatamodeld */; };
+		B1175863175B4B8300C4CC8D /* FBUserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B1175862175B4B8300C4CC8D /* FBUserGroup.m */; };
+		B1175866175B4B8400C4CC8D /* FBUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1175865175B4B8400C4CC8D /* FBUserObject.m */; };
+		B1175868175B4C6300C4CC8D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1175867175B4C6300C4CC8D /* CoreData.framework */; };
+		B117586C175B50F400C4CC8D /* DBContextHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = B117586B175B508600C4CC8D /* DBContextHandle.m */; };
+		B1175870175B580B00C4CC8D /* AddNewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B117586E175B580B00C4CC8D /* AddNewGroupViewController.m */; };
+		B1175871175B580B00C4CC8D /* AddNewGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B117586F175B580B00C4CC8D /* AddNewGroupViewController.xib */; };
+		B1175874175B6A7600C4CC8D /* Check_Box_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B1175872175B6A7600C4CC8D /* Check_Box_Selected.png */; };
+		B1175875175B6A7600C4CC8D /* Check_Box_Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B1175873175B6A7600C4CC8D /* Check_Box_Default.png */; };
 		B1A93252175347C7007C60ED /* LockControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A93250175347C7007C60ED /* LockControlViewController.m */; };
 		B1A93253175347C7007C60ED /* LockControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1A93251175347C7007C60ED /* LockControlViewController.xib */; };
 		B1DC040B175794CC008A34F6 /* CoOwnLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC0409175794CC008A34F6 /* CoOwnLockViewController.m */; };
@@ -40,6 +49,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B117585E175B498500C4CC8D /* ArduinoDBModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArduinoDBModel.xcdatamodel; sourceTree = "<group>"; };
+		B1175861175B4B8300C4CC8D /* FBUserGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUserGroup.h; sourceTree = "<group>"; };
+		B1175862175B4B8300C4CC8D /* FBUserGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUserGroup.m; sourceTree = "<group>"; };
+		B1175864175B4B8400C4CC8D /* FBUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUserObject.h; sourceTree = "<group>"; };
+		B1175865175B4B8400C4CC8D /* FBUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUserObject.m; sourceTree = "<group>"; };
+		B1175867175B4C6300C4CC8D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B117586A175B508600C4CC8D /* DBContextHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBContextHandle.h; sourceTree = "<group>"; };
+		B117586B175B508600C4CC8D /* DBContextHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBContextHandle.m; sourceTree = "<group>"; };
+		B117586D175B580A00C4CC8D /* AddNewGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewGroupViewController.h; sourceTree = "<group>"; };
+		B117586E175B580B00C4CC8D /* AddNewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewGroupViewController.m; sourceTree = "<group>"; };
+		B117586F175B580B00C4CC8D /* AddNewGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewGroupViewController.xib; sourceTree = "<group>"; };
+		B1175872175B6A7600C4CC8D /* Check_Box_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Check_Box_Selected.png; sourceTree = "<group>"; };
+		B1175873175B6A7600C4CC8D /* Check_Box_Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Check_Box_Default.png; sourceTree = "<group>"; };
 		B1A9324F175347C7007C60ED /* LockControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockControlViewController.h; sourceTree = "<group>"; };
 		B1A93250175347C7007C60ED /* LockControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockControlViewController.m; sourceTree = "<group>"; };
 		B1A93251175347C7007C60ED /* LockControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockControlViewController.xib; sourceTree = "<group>"; };
@@ -88,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1175868175B4C6300C4CC8D /* CoreData.framework in Frameworks */,
 				B1E8A647174CFD0900F075F9 /* Social.framework in Frameworks */,
 				B1E8A645174CFD0100F075F9 /* Security.framework in Frameworks */,
 				B1E8A643174CFCF500F075F9 /* libsqlite3.dylib in Frameworks */,
@@ -103,6 +126,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B117585C175B496B00C4CC8D /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B1175869175B506D00C4CC8D /* DBContext */,
+				B1175860175B4B6F00C4CC8D /* ModelClasses */,
+				B117585D175B498500C4CC8D /* ArduinoDBModel.xcdatamodeld */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		B1175860175B4B6F00C4CC8D /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B1175864175B4B8400C4CC8D /* FBUserObject.h */,
+				B1175865175B4B8400C4CC8D /* FBUserObject.m */,
+				B1175861175B4B8300C4CC8D /* FBUserGroup.h */,
+				B1175862175B4B8300C4CC8D /* FBUserGroup.m */,
+			);
+			name = ModelClasses;
+			sourceTree = "<group>";
+		};
+		B1175869175B506D00C4CC8D /* DBContext */ = {
+			isa = PBXGroup;
+			children = (
+				B117586A175B508600C4CC8D /* DBContextHandle.h */,
+				B117586B175B508600C4CC8D /* DBContextHandle.m */,
+			);
+			name = DBContext;
+			sourceTree = "<group>";
+		};
 		B1DC041617579829008A34F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +168,7 @@
 		B1FDC19B174CCE290064F0FA = {
 			isa = PBXGroup;
 			children = (
+				B1175867175B4C6300C4CC8D /* CoreData.framework */,
 				B1FDC1AD174CCE290064F0FA /* LTBLite */,
 				B1FDC1A6174CCE290064F0FA /* Frameworks */,
 				B1FDC1A5174CCE290064F0FA /* Products */,
@@ -150,6 +204,7 @@
 		B1FDC1AD174CCE290064F0FA /* LTBLite */ = {
 			isa = PBXGroup;
 			children = (
+				B117585C175B496B00C4CC8D /* DataModel */,
 				B1DC041617579829008A34F6 /* Models */,
 				B1DC0408175794CC008A34F6 /* CoOwnLockViewController.h */,
 				B1DC0409175794CC008A34F6 /* CoOwnLockViewController.m */,
@@ -172,6 +227,9 @@
 				B1FDC1C3174CCE290064F0FA /* ViewController.m */,
 				B1DE185A174E494100C9103F /* ViewController.xib */,
 				B1FDC1AE174CCE290064F0FA /* Supporting Files */,
+				B117586D175B580A00C4CC8D /* AddNewGroupViewController.h */,
+				B117586E175B580B00C4CC8D /* AddNewGroupViewController.m */,
+				B117586F175B580B00C4CC8D /* AddNewGroupViewController.xib */,
 			);
 			path = LTBLite;
 			sourceTree = "<group>";
@@ -179,6 +237,8 @@
 		B1FDC1AE174CCE290064F0FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1175872175B6A7600C4CC8D /* Check_Box_Selected.png */,
+				B1175873175B6A7600C4CC8D /* Check_Box_Default.png */,
 				B1FDC1CA174CD2C10064F0FA /* Default-568h@2x.png */,
 				B1FDC1CB174CD2C10064F0FA /* Default.png */,
 				B1FDC1CC174CD2C10064F0FA /* Default@2x.png */,
@@ -253,6 +313,9 @@
 				B1DC040C175794CC008A34F6 /* CoOwnLockViewController.xib in Resources */,
 				B1DC041117579673008A34F6 /* FacebookSDKResources.bundle in Resources */,
 				B1DC041217579673008A34F6 /* FBUserSettingsViewResources.bundle in Resources */,
+				B1175871175B580B00C4CC8D /* AddNewGroupViewController.xib in Resources */,
+				B1175874175B6A7600C4CC8D /* Check_Box_Selected.png in Resources */,
+				B1175875175B6A7600C4CC8D /* Check_Box_Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B117586C175B50F400C4CC8D /* DBContextHandle.m in Sources */,
 				B1FDC1B4174CCE290064F0FA /* main.m in Sources */,
 				B1FDC1B8174CCE290064F0FA /* AppDelegate.m in Sources */,
 				B1FDC1C4174CCE290064F0FA /* ViewController.m in Sources */,
@@ -272,6 +336,10 @@
 				B1A93252175347C7007C60ED /* LockControlViewController.m in Sources */,
 				B1DC040B175794CC008A34F6 /* CoOwnLockViewController.m in Sources */,
 				B1DC04151757981C008A34F6 /* FBGroup.m in Sources */,
+				B117585F175B498500C4CC8D /* ArduinoDBModel.xcdatamodeld in Sources */,
+				B1175863175B4B8300C4CC8D /* FBUserGroup.m in Sources */,
+				B1175866175B4B8400C4CC8D /* FBUserObject.m in Sources */,
+				B1175870175B580B00C4CC8D /* AddNewGroupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +473,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B117585D175B498500C4CC8D /* ArduinoDBModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B117585E175B498500C4CC8D /* ArduinoDBModel.xcdatamodel */,
+			);
+			currentVersion = B117585E175B498500C4CC8D /* ArduinoDBModel.xcdatamodel */;
+			path = ArduinoDBModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B1FDC19C174CCE290064F0FA /* Project object */;
 }
