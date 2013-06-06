@@ -44,11 +44,13 @@
 
 - (IBAction)accessLockControlScreen:(id)sender {
     NSLog(@"Going to the lock screen");
-    FriendListViewController* friendListViewController = [[FriendListViewController alloc] initWithNibName:@"FriendListViewController" bundle:nil];
+//    FriendListViewController* friendListViewController = [[FriendListViewController alloc] initWithNibName:@"FriendListViewController" bundle:nil];
+    FBGroupListingViewController *fbGroupListingController = [[FBGroupListingViewController alloc] initWithNibName:@"FBGroupListingViewController" bundle:nil];
     LockControlViewController* lockControlViewController = [[LockControlViewController alloc] initWithNibName:@"LockControlViewController" bundle:nil];
     CoOwnLockViewController* coOwnLockViewController = [[CoOwnLockViewController alloc] initWithNibName:@"CoOwnLockViewController" bundle:nil]; 
     
-    NSArray *tabs = [[NSArray alloc] initWithObjects: lockControlViewController,coOwnLockViewController , friendListViewController, nil];
+//    NSArray *tabs = [[NSArray alloc] initWithObjects: lockControlViewController,coOwnLockViewController , friendListViewController, nil];
+    NSArray *tabs = [[NSArray alloc] initWithObjects: lockControlViewController,coOwnLockViewController , fbGroupListingController, nil];
     
     UITabBarController* lockTabBarController =[[UITabBarController alloc] init];
     [lockTabBarController setViewControllers:tabs animated:YES];

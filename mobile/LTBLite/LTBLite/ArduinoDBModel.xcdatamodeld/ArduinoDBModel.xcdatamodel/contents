@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="FBUserGroup" representedClassName="FBUserGroup" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FBUserObject" inverseName="groups" inverseEntity="FBUserObject" syncable="YES"/>
     </entity>
     <entity name="FBUserObject" representedClassName="FBUserObject" syncable="YES">
@@ -12,7 +13,7 @@
         <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FBUserGroup" inverseName="users" inverseEntity="FBUserGroup" syncable="YES"/>
     </entity>
     <elements>
+        <element name="FBUserGroup" positionX="97" positionY="-297" width="128" height="73"/>
         <element name="FBUserObject" positionX="331" positionY="-297" width="128" height="133"/>
-        <element name="FBUserGroup" positionX="97" positionY="-297" width="128" height="58"/>
     </elements>
 </model>

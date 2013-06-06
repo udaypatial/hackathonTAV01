@@ -28,7 +28,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
     if (self) {
         // Custom initialization
         //self.friends = [[NSArray alloc] init];
-        self.friends = [self getFBFriends];
+        [self getFBFriends];
         //NSLog(@"friends array %@",self.friends);
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Friend List" image:[UIImage imageNamed:@"artist-tab.png"] tag:1];        
     }
@@ -167,9 +167,8 @@ static NSString *CellIdentifier = @"CellIdentifier";
      */
 }
 
--(NSArray*) getFBFriends
+-(void) getFBFriends
 {
-    __block NSArray* friendlist = [[NSArray alloc] init];
     if(FBSession.activeSession.isOpen){
         FBRequest* friendsRequest = [FBRequest requestForMyFriends];        
         [friendsRequest startWithCompletionHandler: ^(FBRequestConnection *connection,
@@ -190,12 +189,11 @@ static NSString *CellIdentifier = @"CellIdentifier";
             }
 
             //friendlist = friends;
-            self.friends = friends;
+            self.friends = friends;  // the friends details array used by the tableview
             [self.friendTableView reloadData];
         }];
     }
     NSLog(@"Friend dump to DB Complete");
-    return friendlist;
     
 }
 

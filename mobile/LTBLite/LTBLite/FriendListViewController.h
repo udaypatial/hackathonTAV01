@@ -18,5 +18,5 @@
 @property (nonatomic,strong) UIBarButtonItem *addButton;
 @property (nonatomic,strong) NSArray *friends;
 
--(NSArray*) getFBFriends;
+-(void) getFBFriends;
 @end
