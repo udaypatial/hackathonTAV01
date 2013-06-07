@@ -133,6 +133,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B10DB90C17621DB000A357FF /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC0408175794CC008A34F6 /* CoOwnLockViewController.h */,
+				B1DC0409175794CC008A34F6 /* CoOwnLockViewController.m */,
+				B1DC040A175794CC008A34F6 /* CoOwnLockViewController.xib */,
+				B1A9324F175347C7007C60ED /* LockControlViewController.h */,
+				B1A93250175347C7007C60ED /* LockControlViewController.m */,
+				B1A93251175347C7007C60ED /* LockControlViewController.xib */,
+			);
+			name = Lock;
+			sourceTree = "<group>";
+		};
+		B10DB90D17621E0E00A357FF /* FB */ = {
+			isa = PBXGroup;
+			children = (
+				B117586D175B580A00C4CC8D /* AddNewGroupViewController.h */,
+				B117586E175B580B00C4CC8D /* AddNewGroupViewController.m */,
+				B117586F175B580B00C4CC8D /* AddNewGroupViewController.xib */,
+				B1D01955175F221E00E1F9CE /* FBGroupListingViewController.h */,
+				B1D01956175F221E00E1F9CE /* FBGroupListingViewController.m */,
+				B1D01957175F221E00E1F9CE /* FBGroupListingViewController.xib */,
+				B1D0195A175F816C00E1F9CE /* FBGroupUsersListViewController.h */,
+				B1D0195B175F816C00E1F9CE /* FBGroupUsersListViewController.m */,
+				B1D0195C175F816D00E1F9CE /* FBGroupUsersListViewController.xib */,
+				B1DE1869174F913D00C9103F /* FBFriendTableViewCell.h */,
+				B1DE186A174F913D00C9103F /* FBFriendTableViewCell.m */,
+				B1DE186C174F919D00C9103F /* FBFriendTableViewCell.xib */,
+			);
+			name = FB;
+			sourceTree = "<group>";
+		};
+		B10DB90E17621E3A00A357FF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B1DE1864174F756B00C9103F /* FriendListViewController.h */,
+				B1DE1865174F756B00C9103F /* FriendListViewController.m */,
+				B1DE1866174F756B00C9103F /* FriendListViewController.xib */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		B10DB90F1762232F00A357FF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B1DE185C174E4B0800C9103F /* ControlBoardController.h */,
+				B1DE185D174E4B0800C9103F /* ControlBoardController.m */,
+				B1DE185E174E4B0800C9103F /* ControlBoardController.xib */,
+				B1FDC1C2174CCE290064F0FA /* ViewController.h */,
+				B1FDC1C3174CCE290064F0FA /* ViewController.m */,
+				B1DE185A174E494100C9103F /* ViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		B117585C175B496B00C4CC8D /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,37 +257,14 @@
 		B1FDC1AD174CCE290064F0FA /* LTBLite */ = {
 			isa = PBXGroup;
 			children = (
+				B10DB90F1762232F00A357FF /* Main */,
+				B10DB90E17621E3A00A357FF /* Test */,
+				B10DB90D17621E0E00A357FF /* FB */,
+				B10DB90C17621DB000A357FF /* Lock */,
 				B117585C175B496B00C4CC8D /* DataModel */,
-				B1DC0408175794CC008A34F6 /* CoOwnLockViewController.h */,
-				B1DC0409175794CC008A34F6 /* CoOwnLockViewController.m */,
-				B1DC040A175794CC008A34F6 /* CoOwnLockViewController.xib */,
-				B1A9324F175347C7007C60ED /* LockControlViewController.h */,
-				B1A93250175347C7007C60ED /* LockControlViewController.m */,
-				B1A93251175347C7007C60ED /* LockControlViewController.xib */,
-				B1DE1869174F913D00C9103F /* FBFriendTableViewCell.h */,
-				B1DE186A174F913D00C9103F /* FBFriendTableViewCell.m */,
-				B1DE186C174F919D00C9103F /* FBFriendTableViewCell.xib */,
-				B1DE1864174F756B00C9103F /* FriendListViewController.h */,
-				B1DE1865174F756B00C9103F /* FriendListViewController.m */,
-				B1DE1866174F756B00C9103F /* FriendListViewController.xib */,
-				B1DE185C174E4B0800C9103F /* ControlBoardController.h */,
-				B1DE185D174E4B0800C9103F /* ControlBoardController.m */,
-				B1DE185E174E4B0800C9103F /* ControlBoardController.xib */,
 				B1FDC1B6174CCE290064F0FA /* AppDelegate.h */,
 				B1FDC1B7174CCE290064F0FA /* AppDelegate.m */,
-				B1FDC1C2174CCE290064F0FA /* ViewController.h */,
-				B1FDC1C3174CCE290064F0FA /* ViewController.m */,
-				B1DE185A174E494100C9103F /* ViewController.xib */,
 				B1FDC1AE174CCE290064F0FA /* Supporting Files */,
-				B117586D175B580A00C4CC8D /* AddNewGroupViewController.h */,
-				B117586E175B580B00C4CC8D /* AddNewGroupViewController.m */,
-				B117586F175B580B00C4CC8D /* AddNewGroupViewController.xib */,
-				B1D01955175F221E00E1F9CE /* FBGroupListingViewController.h */,
-				B1D01956175F221E00E1F9CE /* FBGroupListingViewController.m */,
-				B1D01957175F221E00E1F9CE /* FBGroupListingViewController.xib */,
-				B1D0195A175F816C00E1F9CE /* FBGroupUsersListViewController.h */,
-				B1D0195B175F816C00E1F9CE /* FBGroupUsersListViewController.m */,
-				B1D0195C175F816D00E1F9CE /* FBGroupUsersListViewController.xib */,
 			);
 			path = LTBLite;
 			sourceTree = "<group>";
