@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Preferences.h"
 
 @implementation AppDelegate
 
@@ -21,8 +22,26 @@ NSString *const FBSessionStateChangedNotification = @"com.tavant.ltblite:FBSessi
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     return YES;
+}
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+	NSLog(@"My token is: %@", deviceToken);
+    [Preferences setUDID:[NSString stringWithFormat:@"%@",deviceToken]];
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+	NSLog(@"Failed to get token, error: %@", error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"APNS received" message:@"APNS msg" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    //[alert show];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
