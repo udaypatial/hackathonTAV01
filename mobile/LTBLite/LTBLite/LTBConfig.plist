@@ -4,11 +4,7 @@
 <dict>
 	<key>registerURL</key>
 	<string>http://54.251.240.14:8080/registerUser</string>
-	<key>udid</key>
-	<string>fergregr</string>
 	<key>fb_name</key>
 	<string>ergregre</string>
-	<key>fb_id</key>
-	<string>regerg</string>
 </dict>
 </plist>

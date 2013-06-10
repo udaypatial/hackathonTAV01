@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
     NSLog(FBSession.activeSession.isOpen ? @"YES" :@"NO");
-    
+    [self populateUserDetails];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

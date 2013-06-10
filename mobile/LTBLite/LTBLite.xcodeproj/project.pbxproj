@@ -15,6 +15,10 @@
 		B1175874175B6A7600C4CC8D /* Check_Box_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B1175872175B6A7600C4CC8D /* Check_Box_Selected.png */; };
 		B1175875175B6A7600C4CC8D /* Check_Box_Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B1175873175B6A7600C4CC8D /* Check_Box_Default.png */; };
 		B16DCA9217659EE700A9DB8C /* LTBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16DCA9117659EE700A9DB8C /* LTBConfig.plist */; };
+		B16DCA931765A03800A9DB8C /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = B16DCA7A17659E5400A9DB8C /* Preferences.m */; };
+		B16DCA941765A03E00A9DB8C /* HTTPLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B16DCA8F17659EC900A9DB8C /* HTTPLayer.m */; };
+		B16DCA951765A04700A9DB8C /* ArduinoServices.m in Sources */ = {isa = PBXBuildFile; fileRef = B16DCA8C17659EA800A9DB8C /* ArduinoServices.m */; };
+		B16DCA961765A05100A9DB8C /* JSONObjectCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = B16DCA7D17659E6D00A9DB8C /* JSONObjectCreator.m */; };
 		B1A93252175347C7007C60ED /* LockControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A93250175347C7007C60ED /* LockControlViewController.m */; };
 		B1A93253175347C7007C60ED /* LockControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1A93251175347C7007C60ED /* LockControlViewController.xib */; };
 		B1D01958175F221E00E1F9CE /* FBGroupListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D01956175F221E00E1F9CE /* FBGroupListingViewController.m */; };
@@ -453,6 +457,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16DCA961765A05100A9DB8C /* JSONObjectCreator.m in Sources */,
+				B16DCA951765A04700A9DB8C /* ArduinoServices.m in Sources */,
+				B16DCA941765A03E00A9DB8C /* HTTPLayer.m in Sources */,
+				B16DCA931765A03800A9DB8C /* Preferences.m in Sources */,
 				B117586C175B50F400C4CC8D /* DBContextHandle.m in Sources */,
 				B1FDC1B4174CCE290064F0FA /* main.m in Sources */,
 				B1FDC1B8174CCE290064F0FA /* AppDelegate.m in Sources */,
@@ -497,8 +505,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Sreejit  Sreedharan (X654J4F933)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos6.1]" = "iPhone Developer: Sreejit  Sreedharan (X654J4F933)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Uday Patial (8L3YS5KY23)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos6.1]" = "iPhone Developer: Uday Patial (8L3YS5KY23)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -513,8 +521,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "3A025C2E-C44D-495B-BF18-4983B2BB75F3";
-				"PROVISIONING_PROFILE[sdk=iphoneos6.1]" = "3A025C2E-C44D-495B-BF18-4983B2BB75F3";
+				PROVISIONING_PROFILE = "A22D24BB-832C-4029-AC74-31868EECBB89";
+				"PROVISIONING_PROFILE[sdk=iphoneos6.1]" = "A22D24BB-832C-4029-AC74-31868EECBB89";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -531,8 +539,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Sreejit  Sreedharan (X654J4F933)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sreejit  Sreedharan (X654J4F933)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Uday Patial (8L3YS5KY23)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Uday Patial (8L3YS5KY23)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -540,8 +548,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "3A025C2E-C44D-495B-BF18-4983B2BB75F3";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3A025C2E-C44D-495B-BF18-4983B2BB75F3";
+				PROVISIONING_PROFILE = "A22D24BB-832C-4029-AC74-31868EECBB89";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A22D24BB-832C-4029-AC74-31868EECBB89";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

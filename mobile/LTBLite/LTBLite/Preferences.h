@@ -12,4 +12,13 @@
 +(NSDictionary*) getPlistDictionary;
 +(void) setUDID:(NSString*) udidString;
 +(NSString*) getudidString;
+
++(void) setFBID:(NSString*) fbID;
++(NSString*) getFBID;
+
++(void) setFbUserName:(NSString*) fbName;
++(NSString*) getFbUserName;
+
++(void) setEmail:(NSString*) email;
++(NSString*) getEmail;
 @end

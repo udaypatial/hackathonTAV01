@@ -7,7 +7,7 @@
 //
 
 #import "ControlBoardController.h"
-
+#import "Preferences.h"
 
 @interface ControlBoardController ()
 
@@ -27,7 +27,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self populateUserDetails];
+    
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)populateUserDetails {
+    if (FBSession.activeSession.isOpen) {
+        [[FBRequest requestForMe] startWithCompletionHandler:
+         ^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+             if (!error) {
+                 //self.userNameLabel.text = user.name;
+                 //                 self.userProfileImage.profileID = [user objectForKey:@"id"];
+                 //NSLog(@"user is %@",user);
+                 //NSLog(@"The user profile id is %@",[user objectForKey:@"id"]);
+                 [Preferences setFBID:[user objectForKey:@"id"]];
+                 [Preferences setFbUserName:[user objectForKey:@"username"]];
+                 [Preferences setEmail:[user objectForKey:@"email"]];
+             }
+         }];
+    }
 }
 
 - (void)didReceiveMemoryWarning
