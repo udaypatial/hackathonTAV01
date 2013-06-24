@@ -33,6 +33,14 @@
     return [[NSUserDefaults standardUserDefaults] valueForKey:@"fb_id"];
 }
 
++(void) setUserID:(NSString*) userID{
+    [[NSUserDefaults standardUserDefaults] setObject:userID forKey:@"user_id"];
+}
+
++(NSString*) getUserID{
+    return [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"];
+}
+
 +(void) setFbUserName:(NSString*) fbName{
     [[NSUserDefaults standardUserDefaults] setObject:fbName forKey:@"fbName"];
 }

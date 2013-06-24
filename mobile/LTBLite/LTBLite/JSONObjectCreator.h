@@ -11,5 +11,8 @@
 @interface JSONObjectCreator : NSObject
 
 +(NSString*)createRegisterJSON;
++(NSString*)createAddGroupJSON: (NSMutableDictionary*) groupData;
++(NSString*)createAddDeviceJSON;
++(NSString*)createGetDevicesJSON;
 
 @end

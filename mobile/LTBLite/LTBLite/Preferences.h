@@ -16,6 +16,9 @@
 +(void) setFBID:(NSString*) fbID;
 +(NSString*) getFBID;
 
++(void) setUserID:(NSString*) userID;
++(NSString*) getUserID;
+
 +(void) setFbUserName:(NSString*) fbName;
 +(NSString*) getFbUserName;
 
